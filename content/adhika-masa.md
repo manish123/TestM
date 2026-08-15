@@ -3,7 +3,7 @@ id: panchang.adhika_masa
 canonical_term: Adhika Masa
 title: What Is Adhika Masa? Meaning, Calculation and Traditional Use
 slug: adhika-masa
-category: masa
+category: calendar_system
 aliases:
   - Adhik Maas
   - Adhika Masa
@@ -19,12 +19,11 @@ calculation:
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - Masa
-  - Amanta
-  - Purnimanta
-  - Tithi
-  - Surya Sankramana
-  - Kshaya Masa
+  - panchang.masa
+  - panchang.amanta
+  - panchang.purnimanta
+  - panchang.tithi
+  - panchang.kshaya_masa
 sources:
   - name: B. V. Raman — Muhurtha (Electional Astrology)
     type: supplied-source
