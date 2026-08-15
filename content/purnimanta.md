@@ -11,6 +11,7 @@ aliases:
 languages:
   - en
 status: reviewed
+last_reviewed: 2026-08-15
 calculation:
   engine_key: masa.purnimanta
   dynamic: true
@@ -24,7 +25,6 @@ related_concepts:
   - panchang.shukla_paksha
   - panchang.purnima
   - panchang.amavasya
-  - panchang.surya_sankramana
 ---
 
 # Purnimanta (पूर्णिमांत)
