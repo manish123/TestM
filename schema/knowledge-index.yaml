@@ -1,5 +1,6 @@
-version: "1.0"
+version: "1.1"
 root: panchang.panchang
+
 entities:
   - panchang.panchang
   - panchang.tithi
@@ -13,9 +14,23 @@ entities:
   - panchang.yamaganda
   - panchang.gulika_kaal
   - panchang.choghadiya
+  - panchang.hora
+  - panchang.durmuhurta
+  - panchang.varjyam
+  - panchang.amrit_kaal
+  - panchang.brahma_muhurta
+  - panchang.nishita_kaal
   - panchang.ekadashi
   - panchang.purnima
   - panchang.amavasya
+  - panchang.masa
+  - panchang.amanta
+  - panchang.purnimanta
+  - panchang.paksha
+  - panchang.krishna_paksha
+  - panchang.shukla_paksha
+  - panchang.adhika_masa
+  - panchang.kshaya_masa
 
 edges:
   panchang.panchang:
@@ -25,77 +40,130 @@ edges:
     - panchang.yoga
     - panchang.karana
     - panchang.muhurta
-    - panchang.rahu_kaal
-  panchang.tithi:
-    - panchang.panchang
-    - panchang.vara
-    - panchang.nakshatra
-    - panchang.yoga
-    - panchang.karana
     - panchang.ekadashi
     - panchang.purnima
     - panchang.amavasya
-  panchang.vara:
-    - panchang.panchang
-    - panchang.tithi
-    - panchang.rahu_kaal
-  panchang.nakshatra:
-    - panchang.panchang
-    - panchang.tithi
-    - panchang.yoga
-    - panchang.karana
-  panchang.yoga:
-    - panchang.panchang
-    - panchang.tithi
-    - panchang.nakshatra
-    - panchang.karana
-  panchang.karana:
-    - panchang.panchang
-    - panchang.tithi
-    - panchang.yoga
+    - panchang.masa
+    - panchang.paksha
   panchang.muhurta:
-    - panchang.panchang
     - panchang.rahu_kaal
     - panchang.abhijit_muhurta
+    - panchang.yamaganda
+    - panchang.gulika_kaal
     - panchang.choghadiya
+    - panchang.hora
+    - panchang.durmuhurta
+    - panchang.varjyam
+    - panchang.amrit_kaal
+    - panchang.brahma_muhurta
+    - panchang.nishita_kaal
   panchang.rahu_kaal:
-    - panchang.panchang
-    - panchang.abhijit_muhurta
     - panchang.yamaganda
     - panchang.gulika_kaal
-    - panchang.choghadiya
     - panchang.muhurta
-  panchang.abhijit_muhurta:
-    - panchang.muhurta
-    - panchang.rahu_kaal
-    - panchang.vara
   panchang.yamaganda:
-    - panchang.muhurta
     - panchang.rahu_kaal
     - panchang.gulika_kaal
-  panchang.gulika_kaal:
     - panchang.muhurta
+  panchang.gulika_kaal:
     - panchang.rahu_kaal
     - panchang.yamaganda
+    - panchang.muhurta
   panchang.choghadiya:
     - panchang.muhurta
     - panchang.rahu_kaal
     - panchang.yamaganda
     - panchang.gulika_kaal
-  panchang.ekadashi:
-    - panchang.tithi
+  panchang.hora:
+    - panchang.muhurta
+    - panchang.vara
+  panchang.durmuhurta:
+    - panchang.muhurta
+    - panchang.vara
+  panchang.varjyam:
+    - panchang.muhurta
+    - panchang.nakshatra
+  panchang.amrit_kaal:
+    - panchang.varjyam
+    - panchang.muhurta
+  panchang.brahma_muhurta:
+    - panchang.muhurta
+    - panchang.nishita_kaal
+  panchang.nishita_kaal:
+    - panchang.muhurta
+    - panchang.brahma_muhurta
+  panchang.abhijit_muhurta:
+    - panchang.muhurta
+    - panchang.vara
+  panchang.tithi:
+    - panchang.panchang
+    - panchang.ekadashi
     - panchang.purnima
     - panchang.amavasya
+    - panchang.paksha
+  panchang.vara:
+    - panchang.panchang
+    - panchang.hora
+  panchang.nakshatra:
+    - panchang.panchang
+    - panchang.varjyam
+    - panchang.tithi
+  panchang.yoga:
+    - panchang.panchang
+    - panchang.tithi
+    - panchang.nakshatra
+  panchang.karana:
+    - panchang.panchang
+    - panchang.tithi
+    - panchang.yoga
+  panchang.ekadashi:
+    - panchang.tithi
+    - panchang.paksha
     - panchang.panchang
   panchang.purnima:
     - panchang.tithi
-    - panchang.amavasya
-    - panchang.ekadashi
+    - panchang.paksha
+    - panchang.masa
   panchang.amavasya:
     - panchang.tithi
-    - panchang.purnima
-    - panchang.ekadashi
+    - panchang.paksha
+    - panchang.masa
+  panchang.masa:
+    - panchang.amanta
+    - panchang.purnimanta
+    - panchang.adhika_masa
+    - panchang.kshaya_masa
+    - panchang.paksha
+  panchang.amanta:
+    - panchang.masa
+    - panchang.paksha
+  panchang.purnimanta:
+    - panchang.masa
+    - panchang.paksha
+  panchang.paksha:
+    - panchang.shukla_paksha
+    - panchang.krishna_paksha
+    - panchang.tithi
+    - panchang.masa
+  panchang.shukla_paksha:
+    - panchang.paksha
+    - panchang.tithi
+  panchang.krishna_paksha:
+    - panchang.paksha
+    - panchang.tithi
+  panchang.adhika_masa:
+    - panchang.masa
+    - panchang.amanta
+    - panchang.purnimanta
+  panchang.kshaya_masa:
+    - panchang.masa
+    - panchang.adhika_masa
+  panchang.amrit_kaal:
+    - panchang.varjyam
+    - panchang.muhurta
 
 validation:
-  expected_entity_count: 15
+  expected_entity_count: 28
   unresolved_entity_ids: []
+  relationship_rule: "content.related_concepts must contain canonical entity IDs only"
+  duplicate_slug_rule: "one canonical entity per public slug"
