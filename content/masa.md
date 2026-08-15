@@ -1,3 +1,37 @@
+---
+id: panchang.masa
+canonical_term: Masa
+title: What Is Masa? The Hindu Lunar Month and Its Traditional Use
+slug: masa
+category: calendar_system
+aliases:
+  - Chandra Masa
+  - Lunar Month
+  - मास
+  - चंद्र मास
+languages: [hi, en]
+status: reviewed
+last_reviewed: 2026-08-15
+calculation:
+  engine_key: masa
+  dynamic: true
+  location_sensitive: true
+related_concepts:
+  - panchang.tithi
+  - panchang.paksha
+  - panchang.shukla_paksha
+  - panchang.krishna_paksha
+  - panchang.amanta
+  - panchang.purnimanta
+  - panchang.adhika_masa
+  - panchang.kshaya_masa
+sources:
+  - name: Supplied Panchang.cloud knowledge material
+    type: traditional
+    citation: User-provided extracted Panchanga knowledge
+    locator: Chandra Masa, month selection and traditional Muhurta use
+---
+
 # चंद्र मास / मास (Chandra Masa)
 
 ## 1. WHAT IS IT? (यह क्या है?)
