@@ -1,0 +1,101 @@
+version: "1.0"
+root: panchang.panchang
+entities:
+  - panchang.panchang
+  - panchang.tithi
+  - panchang.vara
+  - panchang.nakshatra
+  - panchang.yoga
+  - panchang.karana
+  - panchang.muhurta
+  - panchang.rahu_kaal
+  - panchang.abhijit_muhurta
+  - panchang.yamaganda
+  - panchang.gulika_kaal
+  - panchang.choghadiya
+  - panchang.ekadashi
+  - panchang.purnima
+  - panchang.amavasya
+
+edges:
+  panchang.panchang:
+    - panchang.tithi
+    - panchang.vara
+    - panchang.nakshatra
+    - panchang.yoga
+    - panchang.karana
+    - panchang.muhurta
+    - panchang.rahu_kaal
+  panchang.tithi:
+    - panchang.panchang
+    - panchang.vara
+    - panchang.nakshatra
+    - panchang.yoga
+    - panchang.karana
+    - panchang.ekadashi
+    - panchang.purnima
+    - panchang.amavasya
+  panchang.vara:
+    - panchang.panchang
+    - panchang.tithi
+    - panchang.rahu_kaal
+  panchang.nakshatra:
+    - panchang.panchang
+    - panchang.tithi
+    - panchang.yoga
+    - panchang.karana
+  panchang.yoga:
+    - panchang.panchang
+    - panchang.tithi
+    - panchang.nakshatra
+    - panchang.karana
+  panchang.karana:
+    - panchang.panchang
+    - panchang.tithi
+    - panchang.yoga
+  panchang.muhurta:
+    - panchang.panchang
+    - panchang.rahu_kaal
+    - panchang.abhijit_muhurta
+    - panchang.choghadiya
+  panchang.rahu_kaal:
+    - panchang.panchang
+    - panchang.abhijit_muhurta
+    - panchang.yamaganda
+    - panchang.gulika_kaal
+    - panchang.choghadiya
+    - panchang.muhurta
+  panchang.abhijit_muhurta:
+    - panchang.muhurta
+    - panchang.rahu_kaal
+    - panchang.vara
+  panchang.yamaganda:
+    - panchang.muhurta
+    - panchang.rahu_kaal
+    - panchang.gulika_kaal
+  panchang.gulika_kaal:
+    - panchang.muhurta
+    - panchang.rahu_kaal
+    - panchang.yamaganda
+  panchang.choghadiya:
+    - panchang.muhurta
+    - panchang.rahu_kaal
+    - panchang.yamaganda
+    - panchang.gulika_kaal
+  panchang.ekadashi:
+    - panchang.tithi
+    - panchang.purnima
+    - panchang.amavasya
+    - panchang.panchang
+  panchang.purnima:
+    - panchang.tithi
+    - panchang.amavasya
+    - panchang.ekadashi
+  panchang.amavasya:
+    - panchang.tithi
+    - panchang.purnima
+    - panchang.ekadashi
+
+validation:
+  expected_entity_count: 15
+  unresolved_entity_ids: []
