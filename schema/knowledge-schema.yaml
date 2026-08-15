@@ -1,0 +1,86 @@
+version: "1.0"
+name: panchang-knowledge-entity
+purpose: Canonical content contract for Panchang.cloud knowledge concepts.
+
+entity:
+  required:
+    - id
+    - canonical_term
+    - title
+    - slug
+    - category
+    - aliases
+    - sections
+    - sources
+    - related_concepts
+
+fields:
+  id:
+    type: string
+    description: Stable machine identifier, e.g. panchang.rahu_kaal
+  canonical_term:
+    type: string
+    description: One canonical concept name; aliases must not become duplicate pages.
+  title:
+    type: string
+  slug:
+    type: string
+    description: Public canonical URL slug.
+  category:
+    type: enum
+    values:
+      - panchang
+      - anga
+      - muhurta
+      - vrat
+      - festival
+      - calendar_system
+      - calculation
+      - observance
+  aliases:
+    type: list[string]
+    description: Search/user terminology mapped to this canonical entity.
+  languages:
+    type: list[string]
+    default: [en]
+  status:
+    type: enum
+    values: [draft, reviewed, published, deprecated]
+    default: draft
+  last_reviewed:
+    type: date
+  sections:
+    type: object
+    required:
+      - what
+      - why
+      - calculation
+      - traditional_interpretation
+      - how_to_use
+      - common_misconceptions
+      - todays_calculation
+  sources:
+    type: list[object]
+    item_fields:
+      - name
+      - type
+      - citation
+      - locator
+  related_concepts:
+    type: list[string]
+  calculation:
+    type: object
+    optional: true
+    fields:
+      engine_key: string
+      dynamic: boolean
+      location_sensitive: boolean
+
+editorial_rules:
+  - Separate traditional claims, calculation methodology, and practical guidance.
+  - Do not present traditional interpretations as scientific causation.
+  - Prefer identifiable primary or authoritative sources.
+  - Explain calculation principles where they are relevant and supportable.
+  - Use one canonical entity for synonymous terminology.
+  - Current dates/times must come from the Panchang calculation engine, not hard-coded article text.
+  - Content must be useful to a person trying to understand and use Panchang, not merely target search keywords.
