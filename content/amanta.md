@@ -1,3 +1,37 @@
+---
+id: panchang.amanta
+canonical_term: Amanta
+title: What Is Amanta? The Lunar Month Reckoning System Ending at Amavasya
+slug: amanta
+category: calendar_system
+aliases:
+  - Amanta Masa
+  - अमांत
+  - Amanta month
+languages: [en]
+status: reviewed
+last_reviewed: 2026-08-15
+calculation:
+  engine_key: masa.amanta
+  dynamic: true
+  location_sensitive: true
+related_concepts:
+  - panchang.masa
+  - panchang.purnimanta
+  - panchang.tithi
+  - panchang.paksha
+  - panchang.shukla_paksha
+  - panchang.krishna_paksha
+  - panchang.amavasya
+  - panchang.purnima
+  - panchang.adhika_masa
+sources:
+  - name: Traditional Panchanga knowledge source
+    type: traditional
+    citation: Supplied Panchang.cloud knowledge material
+    locator: Amanta lunar-month reckoning, month boundary and practical use
+---
+
 # Amanta (अमांत)
 
 ## 1. What Is It?
