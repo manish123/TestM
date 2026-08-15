@@ -16,14 +16,14 @@ calculation:
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - Panchang
-  - Vara
-  - Nakshatra
-  - Yoga
-  - Karana
-  - Ekadashi
-  - Purnima
-  - Amavasya
+  - panchang.panchang
+  - panchang.vara
+  - panchang.nakshatra
+  - panchang.yoga
+  - panchang.karana
+  - panchang.ekadashi
+  - panchang.purnima
+  - panchang.amavasya
 sources:
   - name: Surya Siddhanta
     type: classical
