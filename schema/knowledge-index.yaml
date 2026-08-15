@@ -158,12 +158,9 @@ edges:
   panchang.kshaya_masa:
     - panchang.masa
     - panchang.adhika_masa
-  panchang.amrit_kaal:
-    - panchang.varjyam
-    - panchang.muhurta
 
 validation:
-  expected_entity_count: 28
+  expected_entity_count: 29
   unresolved_entity_ids: []
   relationship_rule: "content.related_concepts must contain canonical entity IDs only"
   duplicate_slug_rule: "one canonical entity per public slug"
