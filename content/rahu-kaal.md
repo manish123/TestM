@@ -12,123 +12,145 @@ aliases:
   - राहु काल
   - राहुकाल
 languages:
-  - en
-status: reviewed
+  - hi
+status: source-boundary
 last_reviewed: 2026-08-15
 calculation:
   engine_key: rahu_kaal
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - Panchang
-  - Abhijit Muhurta
-  - Yamaganda
-  - Gulika Kaal
-  - Choghadiya
-  - Muhurta
+  - Rahu
+  - Lagna Tyajya
+  - Rundhram Yoga
+  - Yatra Lagna
+  - Ekavimsati Mahadoshas
+  - Panchanga
 sources:
-  - name: Traditional Panchanga practice
-    type: classical
-    citation: Traditional weekday-based Rahu Kaal calculation used in Panchanga practice
-    locator: Daytime division methodology
-  - name: Panchang.cloud calculation methodology
-    type: methodology
-    citation: Location-aware daytime division and Rahu Kaal calculation
-    locator: To be documented by the Panchang.cloud calculation engine
+  - name: B. V. Raman — Muhurtha (Electional Astrology)
+    type: supplied-source
+    citation: Source-derived material supplied for Panchang.cloud knowledge-base ingestion
+    locator: Rahu references and Muhurtha rules; no independent Rahu Kaal treatment identified
 ---
 
-# What is Rahu Kaal?
+# Rahu Kaal (राहु काल)
 
-Rahu Kaal, also called Rahu Kalam or Rahukaalam, is a recurring daytime period traditionally treated as unsuitable for beginning certain auspicious activities. It is one of the familiar timing indicators shown in many Panchang systems.
+## 1. What Is It?
 
-The important point is that Rahu Kaal is a **calculated time interval**, not a fixed clock time. Its start and end change with the local sunrise and sunset and with the weekday.
+The available source material from B. V. Raman's *Muhurtha (Electional Astrology)* does **not** provide a specific definition, calculation or independent treatment of Rahu Kaal as a daily inauspicious period.
 
-## Why does Rahu Kaal exist?
+The source does discuss Rahu as an adverse or cruel influence in several Muhurtha contexts, including specified lagna degrees, travel and other combinations. These references should not be conflated with the separately used daily Panchang concept of Rahu Kaal.
 
-Rahu Kaal belongs to the traditional system of selecting and avoiding particular periods for certain activities. In traditional practice, it is associated with Rahu and is generally treated as a period to avoid for initiating specified auspicious undertakings.
+The supplied source identifies the five Panchanga limbs as Tithi, Vara, Nakshatra, Yoga and Karana; it does not classify Rahu Kaal as an additional limb or as one of the 21 Mahadoshas.
 
-The practical significance is therefore about **when an activity is begun**, not a claim that everything occurring during the interval is inherently harmful or that unavoidable events must be feared.
+## 2. Why Does It Exist?
 
-Panchang.cloud should distinguish the traditional rule from claims of physical or scientific causation.
+The available source does not explain the origin, rationale or daily-life purpose of Rahu Kaal as a named daily period.
 
-## How is Rahu Kaal calculated?
+The source does treat Rahu as an adverse influence in particular electional configurations and recommends avoiding specified Rahu-related afflictions. Those source-derived rules belong to the broader Rahu/Muhurtha layer and should not be presented as an explanation of the daily Rahu Kaal system.
 
-The commonly used calculation divides the interval between local sunrise and sunset into eight equal parts. One of those daytime segments is assigned to Rahu according to the weekday.
+## 3. How Is It Calculated or Determined?
 
-The weekday assignment is conventionally:
+The available source does not establish the daily Rahu Kaal calculation, weekday-specific segments, or a sunrise/sunset division method.
 
-| Weekday | Rahu Kaal segment |
-|---|---:|
-| Sunday | 8th segment |
-| Monday | 2nd segment |
-| Tuesday | 7th segment |
-| Wednesday | 5th segment |
-| Thursday | 6th segment |
-| Friday | 4th segment |
-| Saturday | 3rd segment |
+`Calculation details are not sufficiently established by the available sources.`
 
-Because the length of daytime changes through the year and differs by location, the resulting clock interval changes as well. A generic “Rahu Kaal is always 1:30–3:00 PM” statement is therefore only an approximation and should not be used as a location-independent result.
+The source describes calculations for the five Panchanga limbs from solar and lunar motions, but does not provide the daily Rahu Kaal time-division methodology.
 
-For Panchang.cloud, the calculation should use the local sunrise and sunset for the selected location and date, then apply the weekday segment rule to derive the local interval.
+The eventual Panchang.cloud calculation engine should therefore not infer a Rahu Kaal algorithm from this Raman-derived entry alone.
 
-## Traditional interpretation
+## 4. How Can a Normal Person Use It?
 
-Traditional Panchanga practice generally recommends avoiding the commencement of certain auspicious undertakings during Rahu Kaal. The exact way people apply this principle can differ by family, regional practice and the nature of the activity.
+The supplied source provides no specific practical instructions for using the daily Rahu Kaal period.
 
-It is useful to distinguish **starting an activity** from **continuing an activity**. Traditional guidance about Rahu Kaal is primarily concerned with the commencement of specified undertakings; it should not be turned into a blanket instruction to stop normal life whenever the interval occurs.
+It does provide other Rahu-related Muhurtha rules. These include avoiding specified Rahu-affected lagna degrees and considering Rahu affliction in travel and other electional contexts. Such rules should remain separate from Rahu Kaal.
 
-Likewise, unavoidable or routine activities should not be presented as requiring fear or panic merely because they fall within Rahu Kaal.
+### Rahu-related rules actually represented in the supplied material
 
-## How should Rahu Kaal be used?
+- **Lagna Tyajya:** The final three degrees of Pisces, Capricorn, Cancer and Scorpio are described as Rahu-affected and should be avoided for auspicious undertakings.
+- **Travel:** Rahu affliction of the Lagna or Moon at the time of travel is treated as undesirable.
+- **Marriage/relationships:** The supplied material associates certain Rahu relationships involving Venus, Mars and Ketu with undesirable results.
 
-A practical approach is:
+These are Rahu-related Muhurtha rules, not a calculation of Rahu Kaal.
 
-1. Find the Rahu Kaal interval calculated for your location.
-2. If you are deliberately choosing a time to begin a traditionally auspicious undertaking, check whether the selected start falls within Rahu Kaal.
-3. If it does, consider another suitable time if your tradition calls for avoiding Rahu Kaal.
-4. Do not treat Rahu Kaal as a universal prohibition on all activity.
+## 5. Common Misconceptions
 
-Rahu Kaal is one timing factor. A complete Muhurta decision may involve other Panchang elements and activity-specific rules.
+### Rahu Kaal is a major Panchanga limb
 
-## Common misconceptions
+The supplied source identifies five Panchanga limbs — Tithi, Vara, Nakshatra, Yoga and Karana. It does not identify Rahu Kaal as a sixth limb.
 
-### Rahu Kaal occurs at the same time every day
+### B. V. Raman's *Muhurtha* provides the standard daily Rahu Kaal calculation
 
-No. It changes with the local length of daytime and the weekday.
+The supplied material does not support this claim. It explicitly finds no daily Rahu Kaal calculation in the available source.
 
-### Rahu Kaal lasts a fixed 90 minutes everywhere
+### Rahu Kaal and Rahu-related Muhurtha defects are the same concept
 
-No. The traditional eight-part division means the duration depends on the interval from sunrise to sunset. Near the equator and at different seasons/latitudes, the duration can differ.
+They should be distinguished. The source discusses Rahu's adverse influence in specific electional configurations, while the daily Rahu Kaal concept is not independently established in the supplied material.
 
-### Nothing should be done during Rahu Kaal
+## 6. Important Distinctions
 
-That is too broad. Traditional guidance is generally concerned with the commencement of specified auspicious activities. Routine, necessary and ongoing activities should not automatically be treated as prohibited.
+### Rahu Kaal vs Rahu-related Muhurtha rules
 
-### Rahu Kaal is scientifically proven to cause bad results
+- **Rahu Kaal:** a daily Panchang time-period concept whose detailed calculation is not established by the supplied Raman material.
+- **Rahu-related Muhurtha rules:** specific electional rules concerning Rahu's placement, affliction or influence, which are discussed in the supplied material.
 
-That is not a claim Panchang.cloud should make. Rahu Kaal is a traditional calendrical timing practice. Its traditional interpretation should be clearly distinguished from scientific causation.
+### Rahu Kaal vs Rahu's degrees
 
-### A generic internet table is sufficient
+- **Rahu Kaal:** daily time-period concept, not established in the supplied source.
+- **Rahu's affected degrees:** specified final degrees of Pisces, Capricorn, Cancer and Scorpio, treated in the source as Lagna Tyajya.
 
-Not when precision matters. Because the calculation depends on local sunrise and sunset, the relevant interval should be calculated for the user's location and date.
+### Rahu Kaal vs Rahu's astronomical identity
 
-## Today's calculation
+Rahu is traditionally treated as a shadow graha. Astronomically, the corresponding point is the ascending lunar node, where the Moon's orbital path intersects the ecliptic.
 
-This section is intentionally dynamic. Panchang.cloud should insert the current Rahu Kaal interval for the user's selected location and date.
+## 7. Traditional Interpretation
 
-**Current result:** [dynamic Rahu Kaal calculation]
+The supplied source presents Rahu as an adverse or cruel influence and associates Rahu-related affliction with undesirable results in particular electional circumstances.
 
-**See Rahu Kaal today:** [dynamic link]
+Any explanation involving subtle, ethereal or electromagnetic influences should be labelled as **traditional interpretation**, not established physical science.
 
-## Sources
+Astronomical fact: Rahu is not a physical planet; it corresponds to the ascending lunar node.
 
-The calculation described here follows the commonly used traditional Panchanga weekday/segment method. The final Panchang.cloud implementation should document its exact sunrise/sunset source, timezone handling and rounding rules in the methodology documentation.
+## 8. Variations and Disagreements
 
-## Related concepts
+The supplied source does not document disagreements concerning the daily Rahu Kaal system because it does not independently treat that subject.
 
-- [Panchang]
-- [Abhijit Muhurta]
-- [Yamaganda]
-- [Gulika Kaal]
-- [Choghadiya]
-- [Muhurta]
+Any regional or school-specific Rahu Kaal calculation rules require additional authoritative source material.
+
+## 9. Today's Calculation
+
+`Dynamic Panchang calculation required.`
+
+A production implementation should only expose a daily Rahu Kaal result after the calculation rule has been independently established and validated.
+
+## 10. Related Concepts
+
+- Rahu (राहु)
+- Lagna Tyajya (लग्न त्याज्य)
+- Rundhram Yoga (रंध्र योग)
+- Yatra Lagna (यात्रा लग्न)
+- Ekavimsati Mahadoshas (एकविंशति महादोष)
+- Panchanga (पंचांग)
+- Vara (वार)
+
+## 11. Knowledge-Base Summary
+
+- **Canonical Name:** Rahu Kaal / Rahu Kalam (राहु काल / राहु कालम)
+- **Literal Meaning:** Rahu's period; detailed source-derived etymology is not established.
+- **Category:** Daily Inauspicious Period
+- **What it is:** A commonly used daily Panchang concept, but its specific definition is not established by the supplied Raman source.
+- **Why it exists:** Not established by the supplied source.
+- **How it is determined:** Calculation details are not sufficiently established by the available sources.
+- **Primary traditional purpose:** Not established by the supplied source.
+- **Practical use:** Not established by the supplied source.
+- **Important exceptions:** Not established by the supplied source.
+- **Common misconceptions:** Rahu Kaal should not be represented as one of the five Panchanga limbs or as a documented primary subject of Raman's *Muhurtha*.
+- **Related concepts:** Rahu, Lagna Tyajya, Rundhram Yoga, Yatra Lagna, Ekavimsati Mahadoshas.
+- **Calculation-dependent:** Yes
+- **Location-dependent:** Yes, once an independently established daily calculation is adopted.
+
+## Editorial Status
+
+**Source coverage: Insufficient for Rahu Kaal calculation.**
+
+This entry intentionally preserves the boundary of the supplied Raman material. A future research pass may add a separately sourced Rahu Kaal treatment without altering the source-derived Rahu/Muhurtha rules recorded here.
