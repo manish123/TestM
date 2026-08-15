@@ -3,7 +3,7 @@ id: panchang.kshaya_masa
 canonical_term: Kshaya Masa
 title: What Is Kshaya Masa? Meaning, Calculation and Traditional Use
 slug: kshaya-masa
-category: masa
+category: calendar_system
 aliases:
   - Kshaya Maas
   - क्षय मास
@@ -16,12 +16,11 @@ calculation:
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - Masa
-  - Amanta
-  - Purnimanta
-  - Adhika Masa
-  - Tithi
-  - Surya Sankramana
+  - panchang.masa
+  - panchang.amanta
+  - panchang.purnimanta
+  - panchang.adhika_masa
+  - panchang.tithi
 sources:
   - name: The Indian Calendar — S. B. Dikshit / Sewell-Dikshit tradition
     type: calendrical-reference
