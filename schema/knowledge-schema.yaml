@@ -1,4 +1,4 @@
-version: "1.0"
+version: "1.1"
 name: panchang-knowledge-entity
 purpose: Canonical content contract for Panchang.cloud knowledge concepts.
 
@@ -10,6 +10,8 @@ entity:
     - slug
     - category
     - aliases
+    - languages
+    - status
     - sections
     - sources
     - related_concepts
@@ -17,15 +19,18 @@ entity:
 fields:
   id:
     type: string
-    description: Stable machine identifier, e.g. panchang.rahu_kaal
+    pattern: '^panchang\\.[a-z0-9_]+$'
+    description: Stable machine identifier.
   canonical_term:
     type: string
     description: One canonical concept name; aliases must not become duplicate pages.
   title:
     type: string
+    description: Human-readable article title and default HTML title source.
   slug:
     type: string
-    description: Public canonical URL slug.
+    pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+    description: Public canonical URL slug under /knowledge/.
   category:
     type: enum
     values:
@@ -39,16 +44,38 @@ fields:
       - observance
   aliases:
     type: list[string]
-    description: Search/user terminology mapped to this canonical entity.
+    description: Search/user terminology mapped to this canonical entity; aliases do not create pages.
   languages:
     type: list[string]
+    item_pattern: '^[a-z]{2}$'
     default: [en]
   status:
     type: enum
-    values: [draft, reviewed, published, deprecated]
+    values: [draft, established, reviewed, published, deprecated]
+    publish_allowlist: [established, reviewed, published]
     default: draft
+    description: One status vocabulary. Only established/reviewed/published are eligible for production publication.
   last_reviewed:
     type: date
+  seo:
+    type: object
+    optional: true
+    fields:
+      title:
+        type: string
+        description: Optional search title override. If absent, builder derives from title.
+      description:
+        type: string
+        description: Unique human-readable page description used for HTML meta description and social previews.
+      og_image:
+        type: string
+        optional: true
+        description: Optional absolute or asset path for social preview image.
+      noindex:
+        type: boolean
+        optional: true
+        default: false
+        description: Explicit publication override for pages that should not be indexed.
   sections:
     type: object
     required:
@@ -68,6 +95,8 @@ fields:
       - locator
   related_concepts:
     type: list[string]
+    item_pattern: '^panchang\\.[a-z0-9_]+$'
+    description: Canonical entity IDs only. Display names and aliases are resolved by the engine from the index.
   calculation:
     type: object
     optional: true
@@ -82,5 +111,17 @@ editorial_rules:
   - Prefer identifiable primary or authoritative sources.
   - Explain calculation principles where they are relevant and supportable.
   - Use one canonical entity for synonymous terminology.
+  - Related concepts must use canonical entity IDs; never free-text display names.
   - Current dates/times must come from the Panchang calculation engine, not hard-coded article text.
   - Content must be useful to a person trying to understand and use Panchang, not merely target search keywords.
+  - SEO metadata must describe the actual page; do not add keyword lists or keyword stuffing.
+
+seo_generation:
+  canonical_url: "https://panchang.cloud/knowledge/{slug}"
+  title_source: "seo.title || title"
+  description_source: "seo.description"
+  robots_default: "index,follow"
+  aliases: "redirect_to_canonical"
+  sitemap: "publish_allowlist_only"
+  structured_data: [Article, BreadcrumbList]
+  language_alternates: "generated_from_languages_when_localized_pages_exist"
