@@ -81,7 +81,7 @@ content/
 
 ## Current knowledge corpus
 
-The content directory currently contains **28 canonical knowledge entities**. `schema/knowledge-index.yaml` is the canonical entity and relationship registry and must remain synchronized with the content corpus.
+The content directory currently contains **29 canonical knowledge entities**. `schema/knowledge-index.yaml` is the canonical entity and relationship registry and must remain synchronized with the content corpus.
 
 ## Next phase: Knowledge Engine
 
