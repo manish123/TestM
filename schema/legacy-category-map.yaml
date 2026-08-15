@@ -1,0 +1,8 @@
+version: "1.0"
+purpose: Temporary migration map for legacy category values.
+
+# These values are accepted only by migration tooling and must not remain in
+# publishable content frontmatter.
+legacy:
+  masa: calendar_system
+  calendar_cycle: calendar_system
