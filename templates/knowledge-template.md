@@ -1,7 +1,7 @@
 ---
 id: panchang.<concept_id>
 canonical_term: <Canonical Term>
-title: <Search-readable title>
+title: <Human-readable title>
 slug: <canonical-slug>
 category: <category>
 aliases:
@@ -10,12 +10,17 @@ languages:
   - en
 status: draft
 last_reviewed: YYYY-MM-DD
+seo:
+  title: <optional search title override>
+  description: <unique human-readable search/social description>
+  og_image: <optional image path>
+  noindex: false
 calculation:
   engine_key: <engine key or null>
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - <canonical term>
+  - panchang.<canonical_entity_id>
 sources:
   - name: <source name>
     type: <classical|astronomical|methodology|other>
@@ -63,4 +68,8 @@ List identifiable sources used for the definition, tradition, calculation, or me
 
 ## Related concepts
 
-Link to canonical knowledge entities rather than creating duplicate explanations for related terminology.
+Use canonical entity IDs from `schema/knowledge-index.yaml`. The engine resolves IDs to titles, slugs and internal links.
+
+## SEO notes
+
+Do not add `meta keywords`. SEO metadata belongs in frontmatter and is converted by the static builder into HTML `<title>`, `<meta name="description">`, canonical, Open Graph/social metadata, robots directives where explicitly required, and supported structured data. The article body remains the primary source of useful search content.
