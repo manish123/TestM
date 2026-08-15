@@ -17,12 +17,11 @@ calculation:
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - id: panchang.panchang
-  - id: panchang.tithi
-  - id: panchang.yoga
-  - id: panchang.nakshatra
-  - id: panchang.vara
-  - id: panchang.panchanga-shuddhi
+  - panchang.panchang
+  - panchang.tithi
+  - panchang.yoga
+  - panchang.nakshatra
+  - panchang.vara
 ---
 
 # What is Karana?
