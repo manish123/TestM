@@ -1,0 +1,37 @@
+version: "1.0"
+purpose: Temporary migration map for legacy free-text related_concepts values.
+
+# These values are accepted only by migration tooling. They are NOT valid
+# values for content.related_concepts after migration.
+aliases:
+  Panchang: panchang.panchang
+  Panchanga: panchang.panchang
+  Tithi: panchang.tithi
+  Vara: panchang.vara
+  Vaar: panchang.vara
+  Nakshatra: panchang.nakshatra
+  Yoga: panchang.yoga
+  Karana: panchang.karana
+  Muhurta: panchang.muhurta
+  Abhijit Muhurta: panchang.abhijit_muhurta
+  Rahu Kaal: panchang.rahu_kaal
+  Yamaganda: panchang.yamaganda
+  Gulika Kaal: panchang.gulika_kaal
+  Choghadiya: panchang.choghadiya
+  Hora: panchang.hora
+  Durmuhurta: panchang.durmuhurta
+  Varjyam: panchang.varjyam
+  Amrit Kaal: panchang.amrit_kaal
+  Brahma Muhurta: panchang.brahma_muhurta
+  Nishita Kaal: panchang.nishita_kaal
+  Ekadashi: panchang.ekadashi
+  Purnima: panchang.purnima
+  Amavasya: panchang.amavasya
+  Masa: panchang.masa
+  Amanta: panchang.amanta
+  Purnimanta: panchang.purnimanta
+  Paksha: panchang.paksha
+  Shukla Paksha: panchang.shukla_paksha
+  Krishna Paksha: panchang.krishna_paksha
+  Adhika Masa: panchang.adhika_masa
+  Kshaya Masa: panchang.kshaya_masa
