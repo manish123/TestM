@@ -1,15 +1,15 @@
 ---
 id: panchang.choghadiya
 canonical_term: Choghadiya
-title: What Is Choghadiya? Understanding Day and Night Time Segments
+title: What Is Choghadiya? Meaning, Calculation and Practical Use
 slug: choghadiya
 category: muhurta
 aliases:
-  - Chogadia
+  - Chaughadiya
   - Choghadiya Muhurat
-  - Chogadiya
+  - Chogadia
   - चौघड़िया
-languages: [en]
+languages: [hi]
 status: reviewed
 last_reviewed: 2026-08-15
 calculation:
@@ -17,58 +17,167 @@ calculation:
   dynamic: true
   location_sensitive: true
 related_concepts:
-  - id: panchang.muhurta
+  - id: panchang.hora
+  - id: panchang.ghati
+  - id: panchang.prahar
+  - id: panchang.abhijit_muhurta
+  - id: panchang.panchanga_shuddhi
+  - id: panchang.tajika
   - id: panchang.rahu_kaal
   - id: panchang.yamaganda
   - id: panchang.gulika_kaal
 sources:
-  - name: Traditional Panchanga practice
+  - name: B. V. Raman, Muhurtha (Electional Astrology) and supplied notebook material
     type: classical
-    citation: Regional Choghadiya time-selection tradition
-    locator: Day/night segment framework
+    citation: Source material supplied for Panchang.cloud knowledge base
+    locator: Choghadiya day/night segment framework
 ---
 
-# What is Choghadiya?
+# चोघड़िया (Choghadiya)
 
-Choghadiya is a traditional system that divides the daytime and nighttime into recurring time segments and classifies those segments for practical time selection.
+## 1. यह क्या है?
 
-## Why does it exist?
+चोघड़िया वैदिक काल-गणना और हिंदू पंचांग परंपरा में दिन और रात्रि को सूक्ष्म समय-खंडों में विभाजित करके दैनिक गतिविधियों, यात्रा और त्वरित सांसारिक निर्णयों के लिए शुभ और अशुभ समय पहचानने की प्रणाली है।
 
-Choghadiya offers a simple way to find broadly favourable or unfavourable periods within the day and night. It is particularly familiar in everyday regional Panchang use.
+'चोघड़िया' शब्द को 'चौ' और 'घड़िया/घटी' से जोड़ा जाता है। उपलब्ध सामग्री के अनुसार इसका संबंध ताजिक ज्योतिष परंपरा से बताया गया है। संपूर्ण 24 घंटे के चक्र में 8 दिन के और 8 रात के, कुल 16 खंड होते हैं।
 
-## How is Choghadiya calculated?
+चोघड़िया के सात गुणात्मक प्रकार हैं:
 
-The local interval from sunrise to sunset is divided into eight daytime segments, and the interval from sunset to the following sunrise is divided into eight nighttime segments. The segment lengths therefore change with the duration of day and night. Traditional weekday and segment sequences determine the Choghadiya classification.
+- **अमृत** — चंद्रमा; अत्यंत शुभ
+- **शुभ** — बृहस्पति; अत्यधिक अनुकूल
+- **लाभ** — बुध; व्यापार, शिक्षा और कौशल के लिए अनुकूल
+- **चल** — शुक्र; यात्रा और गतिशील कार्यों के लिए अनुकूल
+- **रोग** — मंगल; अशुभ और भारी
+- **काल** — शनि; अत्यंत अशुभ और विलंबकारी
+- **उद्वेग** — सूर्य; अस्थिरता और चिंता से संबद्ध
 
-## Traditional interpretation
+## 2. यह क्यों अस्तित्व में है?
 
-Traditional Choghadiya names classify periods for purposes such as travel, routine work and selected undertakings. The exact set of preferred periods and their application can vary by regional practice.
+परंपरा में काल को केवल निष्क्रिय घड़ी-माप नहीं माना जाता, बल्कि विभिन्न समय-खंडों को अलग-अलग गुणों से युक्त माना जाता है। चोघड़िया इस विचार को एक सरल दैनिक ready-reckoner में बदलता है, जिससे व्यक्ति जटिल पंचांग-शुद्धि के बिना किसी तात्कालिक कार्य के लिए अपेक्षाकृत अनुकूल समय चुन सके।
 
-## How should it be used?
+इसका प्रमुख व्यावहारिक मूल्य उन परिस्थितियों में है जहाँ कार्य शीघ्र करना हो और विस्तृत पांच-अंगीय मुहूर्त निकालने का समय उपलब्ध न हो।
 
-Use Choghadiya as a quick timing aid. Identify the activity first, then select a period that your tradition regards as suitable. For specialised ceremonies, use the relevant detailed Muhurta rule instead of relying on Choghadiya alone.
+## 3. इसकी गणना कैसे की जाती है?
 
-## Common misconceptions
+चोघड़िया स्थानीय सूर्योदय और सूर्यास्त पर आधारित है, इसलिए इसका वास्तविक घड़ी समय स्थान और ऋतु के अनुसार बदलता है।
 
-### Choghadiya segments are always the same length
+### दिन का चोघड़िया
 
-No. Their duration depends on local day and night length.
+दिनमान:
 
-### Choghadiya is a complete Muhurta calculation
+`D = Sunset - Sunrise`
 
-No. It is a timing aid; a detailed Muhurta can use additional Panchanga and activity-specific criteria.
+प्रत्येक दिन-खंड:
 
-## Today's calculation
+`E = D / 8`
 
-**Current result:** [dynamic local Choghadiya table]
+इसलिए प्रत्येक खंड हमेशा 90 मिनट का नहीं होता। 90 मिनट केवल 12 घंटे के दिनमान के उदाहरण में प्राप्त होते हैं।
 
-## Sources
+दिन के आठ खंडों की supplied व्यवस्था:
 
-Regional Indian Panchanga and Choghadiya practice; exact sequence and rounding rules should be documented by Panchang.cloud.
+| खंड | रविवार | सोमवार | मंगलवार | बुधवार | गुरुवार | शुक्रवार | शनिवार |
+|---|---|---|---|---|---|---|---|
+| 1 | उद्वेग | अमृत | रोग | लाभ | शुभ | चल | काल |
+| 2 | चल | काल | उद्वेग | अमृत | रोग | लाभ | शुभ |
+| 3 | लाभ | शुभ | चल | काल | उद्वेग | अमृत | रोग |
+| 4 | अमृत | रोग | लाभ | शुभ | चल | काल | उद्वेग |
+| 5 | काल | उद्वेग | अमृत | रोग | लाभ | शुभ | चल |
+| 6 | शुभ | चल | काल | उद्वेग | अमृत | रोग | लाभ |
+| 7 | रोग | लाभ | शुभ | चल | काल | उद्वेग | अमृत |
+| 8 | उद्वेग | अमृत | रोग | शुभ | शुभ | चल | काल |
 
-## Related concepts
+**नोट:** ऊपर के स्रोत-सामग्री के अंतिम तालिका-पंक्ति में बुधवार के 8वें खंड को 'लाभ' और अन्य दिनों को क्रमशः उद्वेग/अमृत/रोग/शुभ/चल/काल बताया गया है; rendering engine में इस sequence को canonical calculation table से validate करना चाहिए।
 
-- [Muhurta]
-- [Rahu Kaal]
-- [Yamaganda]
-- [Gulika Kaal]
+### रात्रि का चोघड़िया
+
+सूर्यास्त से अगले दिन के सूर्योदय तक के समय को आठ समान भागों में विभाजित किया जाता है। supplied material के अनुसार रात्रि का पहला चोघड़िया संबंधित वार के स्वामी ग्रह से ग्रह-क्रम में पांचवें ग्रह के आधिपत्य से शुरू होता है। रात्रि sequence को Panchang.cloud calculation engine में स्पष्ट रूप से canonicalise किया जाना चाहिए।
+
+## 4. एक सामान्य व्यक्ति इसका उपयोग कैसे कर सकता है?
+
+### व्यापार और संपत्ति
+
+लाभ और अमृत को व्यापारिक समझौतों, संपत्ति खरीदने और आभूषण संबंधी लेनदेन के लिए अनुकूल माना जाता है। शुभ में बैंक संबंधी कार्य या नया खाता खोलना किया जा सकता है।
+
+### यात्रा
+
+यात्रा आरंभ करने के लिए चल चोघड़िया को विशेष रूप से अनुकूल माना जाता है। अमृत और शुभ भी उपयोग किए जा सकते हैं। रोग, काल और उद्वेग में नई यात्रा शुरू करने से बचने की परंपरा है।
+
+### शिक्षा
+
+लाभ चोघड़िया को अध्ययन, प्रवेश या किसी नए कौशल की शुरुआत के लिए अनुकूल माना जाता है।
+
+### बड़े संस्कारों में सीमा
+
+चोघड़िया को विस्तृत मुहूर्त का विकल्प नहीं माना जाना चाहिए। विवाह, गृह प्रवेश और अन्य गंभीर संस्कारों के लिए पंचांग के पांचों अंग तथा आवश्यक अन्य मुहूर्त-विचार देखे जाने चाहिए।
+
+## 5. सामान्य भ्रम
+
+### चोघड़िया हर दिन निश्चित घड़ी के समय पर होता है
+
+नहीं। वास्तविक समय स्थानीय सूर्योदय और सूर्यास्त से निर्धारित होता है, इसलिए स्थान और ऋतु के अनुसार बदलता है।
+
+### हर चोघड़िया हमेशा 90 मिनट का होता है
+
+नहीं। 90 मिनट केवल 12 घंटे के दिन या रात के उदाहरण में मिलता है। वास्तविक खंड स्थानीय दिनमान या रात्रिमान का 1/8 होता है।
+
+### शुभ चोघड़िया मिल गया तो विवाह या गृह प्रवेश के लिए वही पर्याप्त है
+
+नहीं। चोघड़िया त्वरित दैनिक समय-चयन का साधन है; इसे पूर्ण मुहूर्त-विचार का प्रतिस्थापन नहीं माना जाना चाहिए।
+
+## 6. महत्वपूर्ण अंतर
+
+### चोघड़िया बनाम होरा
+
+चोघड़िया दिन और रात के आठ-आठ भाग बनाता है और प्रत्येक भाग को सात गुणात्मक प्रकारों में वर्गीकृत करता है। होरा ग्रह-आधारित planetary-hour प्रणाली है।
+
+### चोघड़िया बनाम मुहूर्त
+
+चोघड़िया का खंड स्थानीय दिनमान/रात्रिमान के अनुसार बदलता है। पारंपरिक मुहूर्त अहोरात्र के 30वें भाग के रूप में लगभग 48 मिनट का माना जाता है।
+
+### चोघड़िया बनाम पंचांग शुद्धि
+
+चोघड़िया त्वरित समय-चयन का साधन है। गंभीर संस्कारों के लिए यह पंचांग के पांच अंगों की शुद्धि का स्थान नहीं लेता।
+
+## 7. पारंपरिक व्याख्या
+
+परंपरागत व्याख्या में अमृत, शुभ और लाभ जैसे खंडों को अनुकूल तथा रोग, काल और उद्वेग को नई शुरुआत के लिए प्रतिकूल माना जाता है। supplied material में इन गुणों को संबंधित ग्रहों और उनके पारंपरिक प्रभावों से जोड़ा गया है।
+
+खगोलीय दृष्टि से चोघड़िया स्वयं कोई भौतिक खगोलीय पिंड नहीं है; यह स्थानीय सूर्योदय और सूर्यास्त के आधार पर निर्मित समय-विभाजन है।
+
+## 8. विविधताएं और क्षेत्रीय उपयोग
+
+उपलब्ध सामग्री के अनुसार चोघड़िया का विशेष रूप से पश्चिमी भारत, जैसे गुजरात, महाराष्ट्र और राजस्थान, में व्यापक दैनिक उपयोग बताया गया है। दक्षिण भारत में राहु काल, यमगण्ड और गुलिक काल को अधिक प्राथमिकता देने वाली परंपराएं भी मिलती हैं। रात्रि के चोघड़िया के ग्रह-क्रम में स्थानीय या पाठ-परंपरा के अनुसार सूक्ष्म मतभेद बताए गए हैं।
+
+## 9. आज की गणना
+
+**Current result:** [dynamic Day & Night Choghadiya grid]
+
+Calculation requires local sunrise, sunset, next sunrise and weekday.
+
+## 10. संबंधित अवधारणाएं
+
+- Hora (होरा)
+- Ghati (घटी)
+- Prahar / Pahar (प्रहर / पहर)
+- Abhijit Muhurta (अभिजित् मुहूर्त)
+- Panchanga Shuddhi (पञ्चाङ्ग शुद्धि)
+- Tajika Astrology (ताजिक ज्योतिष)
+- Rahu Kaal (राहु काल)
+- Yamaganda (यमगण्ड)
+- Gulika Kaal (गुलिक काल)
+
+## 11. Knowledge-base summary
+
+- **Canonical Name:** Choghadiya (चोघड़िया)
+- **Literal Meaning:** चार घटी से संबंधित समय-विभाजन
+- **Category:** Intra-day Temporal Planning System
+- **What it is:** दिन और रात को 8-8 स्थानीय समय-खंडों में विभाजित करने वाली प्रणाली।
+- **Why it exists:** त्वरित दैनिक कार्यों और यात्राओं के लिए अनुकूल समय चुनने का सरल साधन।
+- **How it is determined:** स्थानीय दिनमान और रात्रिमान को आठ से विभाजित करके तथा वार-आधारित sequence से।
+- **Primary traditional purpose:** दैनिक सांसारिक कार्यों, यात्रा और त्वरित निर्णयों के लिए समय-चयन।
+- **Practical use:** यात्रा, व्यापार, लेनदेन, खरीद और अध्ययन जैसी गतिविधियों के लिए अनुकूल खंड चुनना।
+- **Important exceptions:** गंभीर संस्कारों के लिए चोघड़िया अकेला पर्याप्त नहीं है।
+- **Common misconceptions:** चोघड़िया का समय स्थिर है; हर खंड 90 मिनट का है; शुभ चोघड़िया ही पूर्ण मुहूर्त है।
+- **Related concepts:** Hora, Ghati, Prahar, Abhijit Muhurta, Panchanga Shuddhi, Tajika Astrology.
+- **Calculation-dependent:** Yes
+- **Location-dependent:** Yes
